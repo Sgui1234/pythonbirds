@@ -10,7 +10,7 @@ if __name__ == '__main__':
     name = input("Digite Seu Nome: ")
     age = int(input("Digite Quantos Anos Você Vai Fazer: "))
     p = Pessoa(name,age)
-    fi = Pessoa(nome='Seu Filho')
+    fi = Pessoa(nome='Seus Filhos')
     pe = Pessoa(fi, nome=name)
     print(p.cumprimentar(name))
     print(f'{p.nome} Vai Fazer {p.idade} Anos')
