@@ -1,4 +1,5 @@
 class Pessoa():
+    olhos = 2
     def __init__(self, *filhos, nome=None, idade=0):
         self.filhos = list(filhos)
         self.idade = idade
@@ -14,5 +15,6 @@ if __name__ == '__main__':
     pe = Pessoa(fi, nome=name)
     print(p.cumprimentar(name))
     print(f'{p.nome} Vai Fazer {p.idade} Anos')
+    print(Pessoa.olhos, pe.olhos)
     for i in pe.filhos:
         print(i.nome)
